@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/rem.js"></script>
+</head>
+<body class="bd">
+<!-- 头部 -->
+	<div class="pro_header">
+		<div class="fl">
+			<a href="#">
+				<img src="images/left.png" alt="">
+			</a>
+		</div>
+		<div class="mid">
+			发布心愿
+		</div>
+	</div>
+
+
+	<!-- 心愿标题 -->
+	<ul class="wish_1 ovw mar">
+		<li class="bor title ovw">
+			<div class="fl font_col">心愿标题</div>
+			<div class="fr wish_1_title">
+				<input type="text" placeholder="请输入标题">
+			</div>
+		</li>
+
+		<li class="bor title ovw">
+			<div class="fl font_col">当前心愿值</div>
+			<div class="fr wish_1_title wish_1_num ">
+				<span>11111</span>
+			</div>
+		</li>
+
+		<li class="title ovw">
+			<div class="fl font_col">心愿金额</div>
+			<div class="fr wish_1_title">
+				<input type="text" placeholder="请输入金额">
+			</div>
+		</li>
+	</ul>
+
+
+	<!-- 支付方式 -->
+	<dl class="issue_pay mar">
+		<dt class="pad_1 bor">选择支付方式</dt>
+		<dd class="pad_1 bor">
+			<span><img src="images/friend.png" alt=""></span>
+			<span>好友支付</span>
+			<input class="cb cb_true" type="checkbox"  disabled="disabled">
+		</dd>
+		<dd class="pad_1 bor stranger_pay">
+			<span><img src="images/stranger.png" alt=""></span>
+			<span>陌生人支付</span>
+			<span class="manipulate">使用丘比特之箭</span>
+			<input class="cb cb_false" type="checkbox">
+		</dd>
+	</dl>
+
+	<!-- 心愿 -->
+	<div class="pad wish">
+		<p>心愿寄语</p>
+		<textarea class="text" name="" id="" cols="30" rows="4" placeholder="请输入你的心愿寄语..."></textarea>
+	</div>
+
+	<!-- 图片 -->
+	<div class="wish_1_pic">
+		<div>
+			<img src="images/photo.png" alt="">
+		</div>
+	</div>
+
+	<!-- 发布心愿 -->
+	<a class=" issue_wish">发布心愿</a>
+
+	<!-- 弹窗 -->
+	<div class="issue_show">
+		<div class="contant">
+			<h3>温馨提示</h3>
+			<p>丘比特之箭每支消耗1点阳光值，<br>是否使用?</p>
+			<div class="num">
+				<div class="fl reduce">
+					<img src="images/reduce.png" alt="">
+				</div>
+				<div class="fr reduce add">
+					<img src="images/add.png" alt="">
+				</div>
+				<div class="nums">
+					10
+				</div>
+			</div>
+			<div class="btn">
+				<div class="no">
+					再想想
+				</div>
+				<div class="no yes">
+					使用
+				</div>
+			</div>
+		</div>
+
+		<div class="close">
+			<img src="images/close_1.png" alt="">
+		</div>
+	</div>
+<script>
+	$(function(){
+
+		var i=1;
+		$('.cb_true').prop("checked",true);
+		$(".stranger_pay").click(function(){
+			if(i===1){
+				$('.cb_false').prop("checked",true);
+				setTimeout(function(){
+					$(".issue_show").show();
+				},500);
+				$('.bd').addClass("ovw");
+				
+				i=2;
+			}else{
+				$('.cb_false').prop("checked",false);
+				i=1;
+			}
+			
+		})
+
+		var num=parseInt($(".nums").text());
+		console.log(num);
+
+		// 减
+		$(".reduce").click(function(){
+			console.log(num);
+			if(num==1){
+				return;
+			}else{
+				num--;
+				$(".nums").text(num);
+			}
+		});
+
+		// 加
+		$(".add").click(function(){
+			console.log(num);
+			if(num==10){
+				return;
+			}else{
+				num++;
+				$(".nums").text(num);
+			}
+			
+		});
+
+		// 点击叉号隐藏
+		$(".close").click(function(){
+			$(".issue_show").hide();
+			$('.bd').removeClass("ovw");
+		})
+	})
+
+
+</script>
+</body>
+</html>

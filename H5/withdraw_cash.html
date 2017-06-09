@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/rem.js"></script>
+</head>
+<body class="bd">
+<!-- 头部 -->
+	<div class="pro_header">
+		<div class="fl">
+			<a href="#">
+				<img src="images/left.png" alt="">
+			</a>
+		</div>
+		<div class="mid">
+			钱包提现
+		</div>
+	</div>
+
+	<!-- 支付方式 -->
+	<dl class="issue_pay mar">
+		<dt class="pad_1 bor">提现方式</dt>
+		<dd class="pad_1 bor check">
+			<span><img src="images/zfb.png" alt=""></span>
+			<span>支付宝</span>
+			<input class="cb cb_true" type="checkbox">
+		</dd>
+		<dd class="pad_1 bor stranger_pay check" >
+			<span><img src="images/wx.png" alt=""></span>
+			<span>微信</span>
+			<input class="cb cb_false" type="checkbox">
+		</dd>
+	</dl>
+
+	<ul class="wish_1 ovw mar mar_t">
+		<li class="title ovw">
+			<div class="fl font_col">提现账户</div>
+			<div class="fr wish_1_title">
+				<input type="text" placeholder="请输入提现账户账号">
+			</div>
+		</li>
+	</ul>
+
+	<!-- 提现金额 -->
+	<dl class="withdraw_cash ovw">
+		<dt class="pad_1 bor">
+			<span class="font_col">提现金额</span>
+			<span class="fr balance">账户余额 : <i>¥100.00</i></span>
+		</dt>
+		<dd class="ovw pad_1">
+			<span>¥</span>
+			<input type="text" placeholder="请输入提现金额">
+			<p>全部提现</p>
+		</dd>
+
+	</dl>
+
+	<!-- 发布心愿 -->
+	<a class=" issue_wish">提现</a>
+
+	<p class="prompt">温馨提示：预计7个工作日内审核到账</p>
+<script>
+	$(function(){
+		$(".check").click(function(){
+			$(".check").find("input").prop("checked",false);
+			$(this).find("input").prop("checked",true);
+		})
+	})
+
+
+</script>
+</body>
+</html>

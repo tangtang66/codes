@@ -1,0 +1,883 @@
+@charset "UTF-8";
+html {
+  font-size: 20;
+  background: #ededf4; }
+
+/*头部*/
+.pro_header {
+  width: 100%;
+  height: 2.25rem;
+  background: #3b4a61; }
+  .pro_header .fl {
+    width: 2.5rem;
+    text-align: center;
+    line-height: 2.25rem; }
+    .pro_header .fl img {
+      width: 0.9rem;
+      height: 0.9rem;
+      vertical-align: middle; }
+  .pro_header .font_col a {
+    font-size: 0.7rem;
+    color: #14be78; }
+  .pro_header .fr {
+    width: 4.25rem;
+    text-align: center;
+    margin-top: 0.25rem; }
+    .pro_header .fr p a {
+      display: block;
+      font: 0.6rem "微软雅黑";
+      color: #00c47c; }
+  .pro_header .mid {
+    width: 7.5rem;
+    margin: 0 auto;
+    font: 0.95rem "微软雅黑";
+    color: #FFF;
+    line-height: 2.25rem;
+    text-align: center; }
+
+/*轮播*/
+#pro_lb {
+  width: 100%;
+  height: 9.05rem; }
+  #pro_lb .swiper-slide img {
+    width: 100%;
+    height: 100%; }
+  #pro_lb .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #dddddd;
+    opacity: 1; }
+  #pro_lb .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #00c47c; }
+  #pro_lb .swiper-pagination-bullets, #pro_lb .swiper-pagination-custom, #pro_lb .swiper-pagination-fraction {
+    bottom: 0rem;
+    left: 0;
+    width: 100%; }
+
+/*商品分类*/
+.classify {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+  background: #fff; }
+  .classify ul {
+    overflow: hidden; }
+    .classify ul li {
+      padding: 0.75rem 0rem 0.75rem 0rem;
+      float: left;
+      width: 25%;
+      text-align: center; }
+      .classify ul li a {
+        display: block; }
+        .classify ul li a img {
+          width: 2.5rem;
+          height: 2.5rem; }
+        .classify ul li a span {
+          font: 0.6rem "微软雅黑";
+          color: #333333; }
+
+/*列表*/
+.pro_list {
+  width: 100%;
+  overflow: hidden; }
+  .pro_list li {
+    background: #fff;
+    margin-bottom: 0.35rem; }
+    .pro_list li a {
+      display: block; }
+      .pro_list li a img {
+        width: 100%;
+        height: 9.4rem; }
+    .pro_list li p {
+      padding: 0.75rem;
+      font: 0.7rem "微软雅黑";
+      color: #333;
+      line-height: 1rem;
+      text-align: justify; }
+
+/*商品详情页 product_detail.html*/
+/*顶部*/
+.mar_top {
+  margin-top: 0px !important;
+  float: right; }
+  .mar_top a img {
+    width: 0.9rem;
+    height: 0.95rem; }
+
+/*详情页图片*/
+.par_top {
+  width: 100%;
+  height: 14.1rem; }
+  .par_top img {
+    width: 100%; }
+
+/*列表*/
+.par_list {
+  width: 100%;
+  overflow: hidden; }
+  .par_list dt {
+    padding: 0.75rem 0.75rem 0rem 0.75rem;
+    font: 0.7rem "微软雅黑";
+    color: #333;
+    line-height: 1rem;
+    text-align: justify; }
+  .par_list dd {
+    margin-left: 0.75rem;
+    padding: 0.75rem 1.75rem 0.75rem 0rem;
+    border-bottom: 1px solid #fff;
+    overflow: hidden; }
+    .par_list dd .lf {
+      width: 6rem;
+      height: 6rem; }
+      .par_list dd .lf img {
+        width: 100%; }
+    .par_list dd .rig {
+      width: 9.6rem;
+      padding-top: 0.05rem; }
+      .par_list dd .rig h3 {
+        font: 0.8rem "微软雅黑";
+        color: #222;
+        font-weight: bold; }
+      .par_list dd .rig p {
+        font: 0.95rem "微软雅黑";
+        color: #00be78;
+        margin: 0.5rem 0rem 1.25rem 0rem; }
+        .par_list dd .rig p del {
+          font: 0.6rem "微软雅黑";
+          color: #666; }
+      .par_list dd .rig a {
+        display: inline-block;
+        font: 0.6rem "微软雅黑";
+        color: #333;
+        line-height: 1rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+        border: 2px solid #525252;
+        border-radius: 10px; }
+    .par_list dd .text {
+      clear: both;
+      padding: 0.75rem 0rem 0rem 0rem;
+      font: 0.7rem "微软雅黑";
+      color: #333;
+      line-height: 1rem;
+      text-align: justify; }
+
+/*商品详情页 product_detail_1.html*/
+/*轮播*/
+.deta_lb {
+  height: 18.7rem !important; }
+  .deta_lb .top {
+    width: 100%;
+    position: absolute;
+    top: 0.75rem;
+    z-index: 10; }
+    .deta_lb .top .posi_lf {
+      float: left;
+      display: block;
+      margin-left: 0.75rem; }
+      .deta_lb .top .posi_lf img {
+        width: 1.775rem;
+        height: 1.775rem; }
+    .deta_lb .top .posi_rig {
+      float: right;
+      margin-right: 0.75rem; }
+      .deta_lb .top .posi_rig img {
+        width: 1.775rem;
+        height: 1.775rem; }
+
+/*0 商品名称*/
+.deta_shop_name {
+  padding: 0.75rem 0rem 0.75rem 0rem;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 0.35rem; }
+  .deta_shop_name h3 {
+    font: 0.9rem "微软雅黑";
+    color: #222222;
+    font-weight: bold;
+    width: 100%; }
+  .deta_shop_name p {
+    font: 0.9rem "微软雅黑";
+    font-weight: bold;
+    color: #00be78;
+    margin-top: 0.75rem; }
+
+/*颜色分类*/
+.deta_color_sort {
+  text-align: left;
+  overflow: hidden;
+  padding-left: 0.75rem; }
+  .deta_color_sort dt {
+    float: left;
+    font: 0.7rem "微软雅黑";
+    color: #666;
+    margin-right: 0.25rem;
+    line-height: 1rem;
+    border: 2px solid #fff; }
+  .deta_color_sort dd {
+    float: left;
+    margin-left: 0.35rem;
+    font-size: 0.6rem;
+    color: #333;
+    line-height: 1rem;
+    padding: 0rem 1rem 0rem 1rem;
+    border: 2px solid #666666;
+    border-radius: 20px; }
+  .deta_color_sort .current {
+    color: #80e2be;
+    border: 2px solid #80e2be; }
+
+/*详情*/
+.deta_detail {
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 2.55rem; }
+  .deta_detail li {
+    margin: 0.375rem 0rem 0.375rem 0rem;
+    font-size: 0.7rem;
+    color: #333; }
+    .deta_detail li .icon_5 {
+      width: 0.3rem;
+      height: 0.3rem; }
+    .deta_detail li .bag_1 {
+      width: 11.4rem;
+      height: 13.2rem; }
+  .deta_detail .text_ali {
+    text-align: justify; }
+
+/*底部*/
+.deta_footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2rem;
+  background: #fff;
+  border-top: 1px solid #e1e4e8;
+  padding: 0.25rem 0rem 0.25rem 0rem; }
+  .deta_footer a {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    background: #80e2be;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #fff;
+    line-height: 1.95rem;
+    text-align: center; }
+
+/*发布心愿页 issue_wish.html*/
+.issue_location {
+  overflow: hidden;
+  padding: 0.75rem;
+  background: #fff;
+  margin-bottom: 0.35rem; }
+  .issue_location .fl {
+    width: 15.75rem;
+    overflow: hidden; }
+    .issue_location .fl p {
+      font-size: 0.7rem;
+      color: #666666;
+      line-height: 1rem; }
+      .issue_location .fl p span {
+        font-size: 0.7rem;
+        color: #333;
+        font-weight: bold; }
+    .issue_location .fl h4 {
+      height: 1rem;
+      font-size: 0.6rem;
+      color: #666666; }
+      .issue_location .fl h4 span {
+        display: inline-block;
+        line-height: 1.15rem;
+        vertical-align: middle; }
+        .issue_location .fl h4 span img {
+          width: 0.475rem;
+          height: 0.575rem;
+          vertical-align: middle; }
+  .issue_location .fr {
+    width: 1.5rem;
+    margin-top: 0.25rem; }
+    .issue_location .fr img {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-top: 0.1rem; }
+
+.issue_shop {
+  clear: both;
+  height: 3.5rem; }
+  .issue_shop .shop_pic {
+    width: 4.7rem;
+    height: 3.5rem;
+    float: left;
+    margin-right: 0.75rem; }
+    .issue_shop .shop_pic img {
+      width: 100%; }
+  .issue_shop .shop_detail {
+    float: left;
+    width: 11.25rem; }
+    .issue_shop .shop_detail h3 {
+      font-size: 0.8rem;
+      color: #333;
+      font-weight: bold; }
+    .issue_shop .shop_detail p {
+      margin: 0rem 0rem 0.25rem 0rem; }
+      .issue_shop .shop_detail p span {
+        font-size: 0.7rem;
+        color: #666;
+        font-weight: 400; }
+    .issue_shop .shop_detail span {
+      font-size: 0.8rem;
+      color: #00c47c;
+      font-weight: bold; }
+
+/*支付*/
+.issue_pay {
+  background: #fff;
+  overflow: hidden;
+  font-size: 0.7rem;
+  color: #333; }
+  .issue_pay dt {
+    line-height: 2.1rem; }
+  .issue_pay dd {
+    line-height: 3rem; }
+    .issue_pay dd span {
+      margin-right: 0.5rem; }
+      .issue_pay dd span img {
+        width: 1.35rem;
+        height: 1.35rem;
+        vertical-align: middle; }
+    .issue_pay dd .manipulate {
+      font-size: 0.6rem;
+      color: #666;
+      margin-left: 4.75rem;
+      margin-right: 0; }
+    .issue_pay dd .cb {
+      float: right;
+      margin-top: 0.9rem;
+      -webkit-appearance: none;
+      width: 1.15rem;
+      height: 1.15rem;
+      background-position: 0 0;
+      background: url(../images/cb_flase.png) no-repeat;
+      background-size: cover; }
+    .issue_pay dd .cb[type="checkbox"]:checked {
+      background: url(../images/cb_true.png) no-repeat;
+      background-size: cover; }
+
+/*心愿寄语*/
+.wish {
+  overflow: hidden; }
+  .wish p {
+    font-size: 0.7rem;
+    color: #333;
+    margin-bottom: 0.5rem; }
+  .wish .text {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0px;
+    resize: none; }
+
+.issue_wish {
+  display: block;
+  margin: 0.75rem;
+  width: 17.25rem;
+  font-size: 0.8rem;
+  color: #fff;
+  line-height: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  background: #00c47c; }
+
+.issue_show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999; }
+  .issue_show .contant {
+    width: 12.75rem;
+    height: 13.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 6.5rem;
+    border-radius: 5px;
+    text-align: center;
+    color: #333; }
+    .issue_show .contant h3 {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 1.25rem; }
+    .issue_show .contant p {
+      font-size: 0.7rem; }
+    .issue_show .contant .num {
+      overflow: hidden;
+      margin-top: 2rem; }
+      .issue_show .contant .num .reduce img {
+        width: 1.5rem;
+        height: 1.5rem; }
+      .issue_show .contant .num .add img {
+        width: 1.5rem;
+        height: 1.5rem; }
+      .issue_show .contant .num .nums {
+        line-height: 1.85rem;
+        font-size: 1.2rem; }
+    .issue_show .contant .btn {
+      overflow: hidden;
+      margin-top: 2rem; }
+      .issue_show .contant .btn .no {
+        float: left;
+        width: 45%;
+        height: 1.9rem;
+        font-size: 0.7rem;
+        color: #00be78;
+        text-align: center;
+        line-height: 1.9rem;
+        border: 2px solid #00be78;
+        border-radius: 20px; }
+      .issue_show .contant .btn .yes {
+        background: #00be78;
+        color: #fff;
+        float: right; }
+  .issue_show .close {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    margin-top: 1rem; }
+    .issue_show .close img {
+      width: 2rem;
+      height: 2rem; }
+
+/*自定义心愿页 issue_wish_1.html*/
+.wish_1 {
+  padding-left: 0.75rem;
+  background: #fff; }
+  .wish_1 li {
+    line-height: 2.1rem;
+    padding-right: 0.75rem; }
+    .wish_1 li .wish_1_title {
+      width: 12.5rem; }
+      .wish_1 li .wish_1_title input {
+        width: 12.5rem;
+        border: 0px; }
+    .wish_1 li .wish_1_num span {
+      font-size: 0.8rem;
+      color: #e05a5b; }
+
+.wish_1_pic {
+  border-top: 1px solid #ededf4;
+  padding: 0.75rem;
+  background: #FFF; }
+  .wish_1_pic div {
+    width: 3rem;
+    height: 3rem; }
+    .wish_1_pic div img {
+      width: 100%; }
+
+/*交易明细页 trade_detailed.html*/
+.trade_nav {
+  background: #fff; }
+  .trade_nav li {
+    float: left;
+    width: 20%;
+    height: 2rem;
+    text-align: center; }
+    .trade_nav li a {
+      display: inline-block;
+      font-size: 0.7rem;
+      color: #333;
+      line-height: 1.95rem;
+      border-bottom: 2px solid #fff;
+      padding: 0rem 0.25rem 0rem 0.25rem; }
+
+/*列表*/
+.trade_list {
+  padding-left: 0.75rem;
+  background: #fff; }
+  .trade_list li {
+    overflow: hidden;
+    padding-right: 0.75rem; }
+    .trade_list li .time {
+      float: left;
+      margin-top: 0.75rem; }
+      .trade_list li .time p {
+        height: 0.75rem; }
+      .trade_list li .time span {
+        display: inline-block;
+        font-size: 0.6rem;
+        color: #999; }
+    .trade_list li .money {
+      float: right;
+      font-size: 0.95rem;
+      color: #333;
+      font-weight: bold;
+      line-height: 3.2rem; }
+    .trade_list li .head {
+      width: 8rem;
+      margin: 0 auto;
+      line-height: 3.2rem; }
+      .trade_list li .head img {
+        width: 1.7rem;
+        height: 1.7rem;
+        vertical-align: middle; }
+      .trade_list li .head span {
+        margin-left: 0.25rem;
+        font-size: 0.7rem;
+        color: #333333; }
+
+/*钱包提现页  withdraw_cash.html*/
+.withdraw_cash {
+  background: #fff; }
+  .withdraw_cash dt {
+    line-height: 2rem; }
+    .withdraw_cash dt .balance {
+      font-size: 0.6rem;
+      color: #666; }
+      .withdraw_cash dt .balance i {
+        font-style: normal; }
+  .withdraw_cash dd {
+    line-height: 2.75rem; }
+    .withdraw_cash dd span {
+      font-size: 1.25rem;
+      color: #333; }
+    .withdraw_cash dd input {
+      border: 0px;
+      width: 11.25rem;
+      height: 2rem;
+      font-size: 0.7rem;
+      color: #999;
+      margin-left: 0.5rem;
+      vertical-align: middle; }
+    .withdraw_cash dd p {
+      display: inline-block;
+      float: right;
+      width: 3.75rem;
+      height: 1.3rem;
+      font-size: 0.6rem;
+      color: #333;
+      border: 2px solid #d5d5d5;
+      border-radius: 20px;
+      line-height: 1.3rem;
+      text-align: center;
+      margin-top: 0.7rem; }
+
+.prompt {
+  font-size: 0.6rem;
+  color: #666;
+  text-align: center; }
+
+/*设置   set.html*/
+.set li {
+  height: 2.25rem;
+  line-height: 2.25rem;
+  padding: 0rem 0.75rem 0rem 0.75rem;
+  background: #fff;
+  position: relative; }
+  .set li .line {
+    height: 0.05rem;
+    background: #ededf4;
+    width: 18rem;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .set li .icon_1 {
+    width: 1.05rem;
+    height: 1.075rem;
+    margin-right: 0.75rem;
+    vertical-align: middle; }
+  .set li span {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 0.1rem; }
+  .set li .rig {
+    float: right; }
+    .set li .rig a {
+      padding: 0.375rem 0rem 0.375rem 5rem; }
+      .set li .rig a img {
+        width: 0.4rem;
+        height: 0.7rem;
+        vertical-align: middle; }
+  .set li .icon_2 {
+    width: 0.95rem;
+    height: 0.95rem; }
+  .set li .icon_3 {
+    width: 1.15rem;
+    height: 1.1rem; }
+  .set li .icon_4 {
+    width: 0.95rem;
+    height: 0.9rem; }
+  .set li .icon_5 {
+    width: 0.9rem;
+    height: 0.925rem; }
+
+/*钱包页面 walle.html*/
+.wallet {
+  width: 8rem;
+  height: 5.8rem;
+  margin: 0 auto;
+  margin-top: 3.25rem; }
+  .wallet img {
+    width: 100%; }
+
+.wal_money {
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+  margin-top: 1.5rem; }
+
+.wal_change {
+  font-size: 0.7rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.wal_recharge {
+  width: 14rem;
+  margin: 0 auto;
+  margin-bottom: 1rem; }
+
+.wal_bg {
+  background: none;
+  border: 1px solid #d5d5d5;
+  font-size: 0.8rem;
+  color: #666; }
+
+/*我的心愿单页面 wish_shop*/
+.wish_shop {
+  width: 100%;
+  height: 10.6rem;
+  position: relative; }
+  .wish_shop img {
+    width: 100%; }
+  .wish_shop .wish_underway {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    width: 2.5rem;
+    height: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 0.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 20px; }
+  .wish_shop .wish_start_time {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    line-height: 1rem; }
+    .wish_shop .wish_start_time img {
+      width: 0.6rem;
+      height: 0.6rem;
+      margin-bottom: 0.05rem;
+      vertical-align: middle; }
+    .wish_shop .wish_start_time span {
+      font-size: 0.6rem;
+      color: #fff;
+      vertical-align: middle; }
+  .wish_shop .wish_shop_name {
+    position: absolute;
+    top: 4.25rem;
+    left: 0;
+    width: 100%; }
+    .wish_shop .wish_shop_name h3 {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #fff;
+      line-height: 1.5rem; }
+    .wish_shop .wish_shop_name p {
+      text-align: center;
+      font-size: 0.6rem;
+      color: #fff; }
+
+/*完成进度*/
+.wish_finished div {
+  width: 33.3%;
+  margin: 0 auto;
+  text-align: center; }
+  .wish_finished div p {
+    font-size: 1.2rem;
+    color: #333;
+    height: 1.5rem; }
+  .wish_finished div .font_col {
+    color: #00c47c; }
+  .wish_finished div span {
+    font-size: 0.6rem;
+    color: #666; }
+  .wish_finished div i {
+    display: inline-block;
+    height: 1.1rem;
+    border-left: 1px solid #dddddd;
+    margin-top: 0.75rem; }
+.wish_finished .wid {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem; }
+
+/*评论*/
+.wish_comment li {
+  padding-left: 0.75rem;
+  background: #fff; }
+  .wish_comment li .com_content {
+    padding: 0.75rem 0.75rem 0.75rem 0rem; }
+    .wish_comment li .com_content .comment_user_head {
+      width: 2.5rem; }
+      .wish_comment li .com_content .comment_user_head img {
+        width: 1.75rem;
+        height: 1.75rem; }
+    .wish_comment li .com_content .comment_user_name {
+      width: 14.75rem; }
+      .wish_comment li .com_content .comment_user_name .use_name {
+        overflow: hidden;
+        line-height: 2rem; }
+        .wish_comment li .com_content .comment_user_name .use_name b {
+          font-size: 0.7rem;
+          color: #333; }
+        .wish_comment li .com_content .comment_user_name .use_name .time {
+          font-size: 0.6rem;
+          color: #999;
+          margin-left: 0.25rem; }
+        .wish_comment li .com_content .comment_user_name .use_name .num {
+          font-size: 0.8rem;
+          color: #00c47c; }
+      .wish_comment li .com_content .comment_user_name .text_content {
+        font-size: 0.7rem;
+        color: #333;
+        text-align: justify; }
+
+/*查看更多*/
+.wish_more_comment {
+  background: #fff;
+  border-top: 1px solid #ededf4;
+  padding: 0.75rem 0rem 0.75rem 0rem; }
+  .wish_more_comment .more {
+    display: block;
+    width: 4.75rem;
+    height: 1.25rem;
+    margin: 0 auto;
+    border: 2px solid #ededf4;
+    border-radius: 20px;
+    font-size: 0.6rem;
+    color: #666;
+    text-align: center;
+    line-height: 1.25rem; }
+
+.wish_picture {
+  width: 100%;
+  height: 9.375rem; }
+  .wish_picture img {
+    width: 100%; }
+
+/*邀请好友列表页 invite_friend.html*/
+.invite_list {
+  background: #fff; }
+  .invite_list .title {
+    font-size: 0.6rem;
+    color: #999;
+    line-height: 1.8rem; }
+    .invite_list .title .friend_num {
+      width: 25%;
+      text-align: center; }
+    .invite_list .title .odds {
+      width: 30%;
+      text-align: center; }
+    .invite_list .title .grade {
+      width: 40%;
+      margin: 0 auto;
+      text-align: center; }
+  .invite_list .explain {
+    margin-left: 0.75rem;
+    padding: 0rem 0.75rem 0rem 0rem;
+    color: #333; }
+
+/*邀请码*/
+.invite_code {
+  background: #fff; }
+  .invite_code h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333; }
+  .invite_code p {
+    font-size: 0.6rem;
+    color: #666;
+    text-align: center; }
+  .invite_code .invite_friend {
+    width: 100%;
+    margin: 0;
+    margin-top: 0.75rem; }
+
+/*我的级别*/
+.my_grade {
+  background: #fff; }
+  .my_grade .my {
+    overflow: hidden; }
+    .my_grade .my p {
+      font-size: 0.6rem;
+      color: #333; }
+    .my_grade .my .my_friend img {
+      width: 0.9rem;
+      height: 0.7rem; }
+    .my_grade .my .my_friend span {
+      font-size: 0.6rem;
+      color: #14aa6e; }
+  .my_grade h1 {
+    font-size: 0.8rem;
+    color: #333;
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 0.5rem; }
+    .my_grade h1 span {
+      color: #14aa6e; }
+  .my_grade h2 {
+    font-size: 0.6rem;
+    color: #666;
+    text-align: center; }
+
+/*公共样式*/
+.pad {
+  padding: 0.75rem;
+  background: #fff; }
+
+.pad_1 {
+  padding: 0rem 0.75rem 0rem 0.75rem; }
+
+.bor {
+  border-bottom: 1px solid #ededf4; }
+
+.mar {
+  margin-bottom: 0.35rem; }
+
+.ovw {
+  overflow: hidden; }
+
+.mar_t {
+  margin-top: 0.35rem; }
+
+.font_col {
+  font-size: 0.7rem;
+  color: #333; }
+
+.font_c {
+  color: #00be78 !important;
+  border-color: #00be78 !important; }
+
+.mar_b {
+  margin-bottom: 0px !important; }
+
+.mar-bot {
+  margin-bottom: 1rem !important; }
+
+.pad_b {
+  padding-bottom: 0px !important; }
+
+/*# sourceMappingURL=public.css.map */

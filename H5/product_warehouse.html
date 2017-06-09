@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/rem.js"></script>
+</head>
+<body>
+<!-- 头部 -->
+	<div class="pro_header">
+		<div class="fl">
+			<a href="#">
+				<img src="images/left.png" alt="">
+			</a>
+		</div>
+		<div class="fr">
+			<p><a href="#">发布<br>自定义心愿</a></p>
+			<span></span>
+		</div>
+		<div class="mid">
+			产品库
+		</div>
+	</div>
+
+	<!-- 轮播 -->
+	<div class="swiper-container" id="pro_lb">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/lunbo.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/lunbo.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/lunbo.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<!-- 分类 -->
+	<div class="classify">
+		<ul>
+			<li>
+				<a href="#">
+					<img src="images/icon_1.png" alt=""><br>
+					<span>家居</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/icon_2.png" alt=""><br>
+					<span>数码</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/icon_3.png" alt=""><br>
+					<span>服装</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/icon_4.png" alt=""><br>
+					<span>酒水</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 列表 -->
+	<ul class="pro_list">
+		<li>
+			<a href="#">
+				<img src="images/pic.png" alt="">
+			</a>
+			<p>没有该不该,只有愿意不愿意,《山楂树之恋》,张爱玲的话字字扎心,还是很喜欢她,方文山那些漂亮的让人落泪的句子,很美的英文句子。</p>
+		</li>
+		<li>
+			<a href="#">
+				<img src="images/pic_1.png" alt="">
+			</a>
+			<p>没有该不该,只有愿意不愿意,《山楂树之恋》,张爱玲的话字字扎心,还是很喜欢她,方文山那些漂亮的让人落泪的句子,很美的英文句子。没有该不该,只有愿意不愿意,《山楂树之恋》,张爱玲的话字字扎心,还是很喜欢她,方文山那些漂亮的让人落泪的句子,很美的英文句子。</p>
+		</li>
+	</ul>
+
+
+<script language="javascript"> 
+
+	var mySwiper = new Swiper('.swiper-container',{
+	pagination : '.swiper-pagination',
+	loop:true,
+	paginationClickable :true,
+	});
+
+
+	// $('.food_title p').fonts({
+	// 	fontNum: 40
+	// });
+
+</script>
+</body>
+</html>

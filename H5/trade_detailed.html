@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #fff;">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/rem.js"></script>
+</head>
+<body class="bd" style="background: #ededf4;">
+<!-- 头部 -->
+	<div class="pro_header">
+		<div class="fl">
+			<a href="#">
+				<img src="images/left.png" alt="">
+			</a>
+		</div>
+		<div class="mid">
+			交易明细
+		</div>
+	</div>
+
+	<!-- 导航 -->
+	<ul class="trade_nav mar ovw">
+		<li ><a class="font_c" href="#">全部</a></li>
+		<li><a href="#">帮Ta支付</a></li>
+		<li><a href="#">得到帮助</a></li>
+		<li><a href="#">充值</a></li>
+		<li><a href="#">提现</a></li>
+	</ul>
+	
+	<!-- 列表 -->
+	<ul class="trade_list ovw">
+		<li class="bor">
+			<div class="time">
+				<p class="font_col">2017.05.18</p><span>08:00</span>
+			</div>
+			<div class="money">
+				-200
+			</div>
+			<div class="head">
+				<img src="images/user.png" alt="">
+				<span>帮张学友支付</span>
+			</div>
+			
+		</li>
+		<li class="bor">
+			<div class="time">
+				<p class="font_col">2017.05.18</p><span>08:00</span>
+			</div>
+			<div class="money">
+				+200
+			</div>
+			<div class="head">
+				<img src="images/user.png" alt="">
+				<span>得到张学友的帮助</span>
+			</div>
+			
+		</li>
+
+		<li class="bor">
+			<div class="time">
+				<p class="font_col">2017.05.18</p><span>08:00</span>
+			</div>
+			<div class="money">
+				+200
+			</div>
+			<div class="head">
+				<img src="images/zfb.png" alt="">
+				<span>使用支付宝充值</span>
+			</div>
+			
+		</li>
+		<li class="bor">
+			<div class="time">
+				<p class="font_col">2017.05.18</p><span>08:00</span>
+			</div>
+			<div class="money">
+				+200
+			</div>
+			<div class="head">
+				<img src="images/wx.png" alt="">
+				<span>使用微信充值</span>
+			</div>
+			
+		</li>
+		<li class="bor">
+			<div class="time">
+				<p class="font_col">2017.05.18</p><span>08:00</span>
+			</div>
+			<div class="money">
+				-200
+			</div>
+			<div class="head">
+				<img src="images/wx.png" alt="">
+				<span>使用微信支付</span>
+			</div>
+		</li>
+		<li class="bor">
+			<div class="time">
+				<p class="font_col">2017.05.18</p><span>08:00</span>
+			</div>
+			<div class="money">
+				+200
+			</div>
+			<div class="head">
+				<img src="images/zfb.png" alt="">
+				<span>使用支付宝支付</span>
+			</div>
+			
+		</li>
+	</ul>
+	
+<script>
+	$(function(){
+		$(".trade_nav>li").click(function(){
+			$(".trade_nav>li>a").removeClass("font_c");
+			$(this).find("a").addClass("font_c");
+		})
+		
+	})
+
+
+</script>
+</body>
+</html>

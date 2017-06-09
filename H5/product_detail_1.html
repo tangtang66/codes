@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<!-- 轮播 -->
+	<div class="swiper-container deta_lb" id="pro_lb">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/lunbo_1.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/lunbo_1.png" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/lunbo_1.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+		<div class="top">
+			<a class="posi_lf">
+
+				<img src="images/left_1.png" alt="">
+			</a>
+			<a class="posi_rig">
+				<img src="images/service.png" alt="">
+			</a>
+		</div>
+	</div>
+
+	<!-- 商品名称 -->
+	<div class="deta_shop_name">
+		<h3>女式撞色牛皮短款高档挎包</h3>
+		<p>3800心愿金</p>
+	</div>
+
+	<!-- 颜色分类 -->
+	<dl class="deta_shop_name deta_color_sort">
+		<dt>颜色:</dt> 
+		<dd>白色</dd>
+		<dd class="current">黑色</dd>
+		<dd>绿色</dd>
+	</dl>
+
+	<!-- 详情 -->
+	<ul class="deta_detail">
+		<li><b>详情</b></li>
+		<li>
+			<img class="icon_5" src="images/icon_5.png" alt="">
+		</li>
+		<li class="text_ali">
+			能不少人都有过这种经历：出行时好不容易找到了一辆共享单车却发现车上加了一把私锁。面对这种令人恼火的状况，只有给运营公司打电话举报一种方法吗？对此，有网友分享了自己的做法——直接用剪刀剪断私锁。这个建议得到了不少人的响应。一位女主播在某平台直播沿街剪断私锁，还获得了网友上万元的打赏。不过，这种做法到底合不合法？该不该提倡？
+		</li>
+		<li>
+			<img class="bag_1" src="images/bag_1.png" alt="">
+		</li>
+		<li class="text_ali">
+			能不少人都有过这种经历：出行时好不容易找到了一辆共享单车却发现车上加了一把私锁。面对这种令人恼火的状况，只有给运营公司打电话举报一种方法吗？对此，有网友分享了自己的做法——直接用剪刀剪断私锁。这个建议得到了不少人的响应。一位女主播在某平台直播沿街剪断私锁，还获得了网友上万元的打赏。不过，这种做法到底合不合法？该不该提倡？
+		</li>
+	</ul>
+
+	<div class="deta_footer">
+		<a>实现心愿</a>
+	</div>
+<script language="javascript"> 
+window.onload=function(){
+	var mySwiper = new Swiper('.swiper-container',{
+	pagination : '.swiper-pagination',
+	loop:true,
+	paginationClickable :true,
+	});
+
+
+	// 点击颜色分类切换
+	var  odd=document.querySelectorAll(".deta_color_sort>dd");
+	for(var i=0;i<odd.length;i++){
+		odd[i].index=i;
+		odd[i].onclick=function(){
+			for(var j=0;j<odd.length;j++){
+				odd[j].className="";
+			}
+			this.className="current";
+		}
+	}
+}
+	
+
+</script>
+</body>
+</html>
